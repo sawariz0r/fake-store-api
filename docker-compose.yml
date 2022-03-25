@@ -13,7 +13,7 @@ services:
     image: mongo
     restart: always
     volumes:
-      - ./data/db:/data/db
+      - ./mongo_data:/data/db
     env_file:
       - .env
     environment:
