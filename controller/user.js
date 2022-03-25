@@ -55,11 +55,7 @@ module.exports.addUser = (req, res) => {
 						city: req.body.address.city,
 						street: req.body.address.street,
 						number: req.body.number,
-						zipcode: req.body.zipcode,
-						geolocation: {
-							lat: req.body.address.geolocation.lat,
-							long: req.body.address.geolocation.long,
-						},
+						zipcode: req.body.zipcode
 					},
 					phone: req.body.phone,
 				});
@@ -95,10 +91,6 @@ module.exports.editUser = (req, res) => {
 				street: req.body.address.street,
 				number: req.body.number,
 				zipcode: req.body.zipcode,
-				geolocation: {
-					lat: req.body.address.geolocation.lat,
-					long: req.body.address.geolocation.long,
-				},
 			},
 			phone: req.body.phone,
 		});

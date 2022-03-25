@@ -12,6 +12,7 @@ module.exports.login = (req, res) => {
 				if (user) {
 					res.json({
 						token: 'eyJr389hbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9',
+						userId: user.id
 					});
 				} else {
 					res.status(401);
